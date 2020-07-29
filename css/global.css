@@ -1,0 +1,83 @@
+*, *:after, *:before {
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+	background-color: #000000;
+	background: linear-gradient(45deg, #2b4162 0%, #12100e 74%);
+	background-size: 300% 300%;
+	animation: gradient 20s linear infinite alternate;
+	font-size: 14px;
+	font-family: "Roboto", "Helvetica", "Arial";
+	color: white;
+	margin: 0;
+}
+
+img {
+	width: 100%;
+}
+
+h1 {
+	font-size: 22px;
+	margin-top: 0;
+}
+
+h2 {
+	font-size: 18px;
+	margin-top: 0;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	background-color: rgba(0, 0, 0, 0.75);
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+
+a {
+	text-decoration: none;
+	display: block;
+	color: inherit;
+}
+
+a:hover {
+	color: #ccc;
+}
+
+main {
+	max-width: 1200px;
+	margin: 0 auto;
+	background-color: rgba(0, 0, 0, 0.2);
+	height: 150vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 100% 0%;
+	}
+	100% {
+		background-position: 0% 100%;
+	}
+}
+
+@media(max-width:768px) {
+    body {
+        font-size: 12px;
+	}
+	
+	h1 {
+		font-size: 18px;
+	}
+
+	h2 {
+		font-size: 16px;
+	}
+
+}
